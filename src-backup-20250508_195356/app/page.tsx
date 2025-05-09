@@ -51,41 +51,25 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      {/* Testimonials Carousel */}
-      <section className="w-full bg-white/80 dark:bg-gray-900/80 py-8 overflow-x-hidden relative">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex gap-8 animate-testimonials-slide" style={{ width: 'max-content' }}>
-            {[
-              { name: "Max S., 17", img: "https://randomuser.me/api/portraits/men/32.jpg", rating: 5.0, text: "Hab Mathe endlich gecheckt! Von 4 auf 1, dank Memes und Quiz. Beste Plattform!" },
-              { name: "Lea P., 16", img: "https://randomuser.me/api/portraits/women/44.jpg", rating: 4.8, text: "Endlich Spaß beim Lernen! Die Memes sind genial und die Erklärungen easy." },
-              { name: "Jonas R., 18", img: "https://randomuser.me/api/portraits/men/65.jpg", rating: 4.7, text: "Mit Gamification und Quiz macht Mathe sogar Spaß. Meine Noten sind gestiegen!" },
-              { name: "Sophie L., 15", img: "https://randomuser.me/api/portraits/women/68.jpg", rating: 4.9, text: "Ich hab Mathe gehasst – jetzt macht's sogar Spaß!" },
-              { name: "Tim K., 19", img: "https://randomuser.me/api/portraits/men/77.jpg", rating: 4.8, text: "Beste Vorbereitung fürs Abi. Memes + Quiz = Erfolg!" },
-              { name: "Anna W., 17", img: "https://randomuser.me/api/portraits/women/12.jpg", rating: 5.0, text: "Die Community ist super hilfsbereit. Ich fühl mich nicht mehr allein mit Mathe!" },
-              { name: "Paul M., 16", img: "https://randomuser.me/api/portraits/men/23.jpg", rating: 4.7, text: "Schnelle Erfolge, coole Badges – so macht Lernen Laune." },
-              { name: "Mia F., 18", img: "https://randomuser.me/api/portraits/women/33.jpg", rating: 4.9, text: "Ich hab endlich Spaß am Lernen. Die Memes sind Gold wert!" },
-              { name: "Lukas B., 17", img: "https://randomuser.me/api/portraits/men/41.jpg", rating: 4.8, text: "Quiz, Memes, XP – das motiviert mich richtig!" },
-              { name: "Emily S., 15", img: "https://randomuser.me/api/portraits/women/55.jpg", rating: 4.9, text: "Meine Noten sind besser und ich lache mehr beim Lernen!" },
-            ].concat([
-              { name: "Max S., 17", img: "https://randomuser.me/api/portraits/men/32.jpg", rating: 5.0, text: "Hab Mathe endlich gecheckt! Von 4 auf 1, dank Memes und Quiz. Beste Plattform!" },
-              { name: "Lea P., 16", img: "https://randomuser.me/api/portraits/women/44.jpg", rating: 4.8, text: "Endlich Spaß beim Lernen! Die Memes sind genial und die Erklärungen easy." },
-              { name: "Jonas R., 18", img: "https://randomuser.me/api/portraits/men/65.jpg", rating: 4.7, text: "Mit Gamification und Quiz macht Mathe sogar Spaß. Meine Noten sind gestiegen!" },
-              { name: "Sophie L., 15", img: "https://randomuser.me/api/portraits/women/68.jpg", rating: 4.9, text: "Ich hab Mathe gehasst – jetzt macht's sogar Spaß!" },
-              { name: "Tim K., 19", img: "https://randomuser.me/api/portraits/men/77.jpg", rating: 4.8, text: "Beste Vorbereitung fürs Abi. Memes + Quiz = Erfolg!" },
-              { name: "Anna W., 17", img: "https://randomuser.me/api/portraits/women/12.jpg", rating: 5.0, text: "Die Community ist super hilfsbereit. Ich fühl mich nicht mehr allein mit Mathe!" },
-              { name: "Paul M., 16", img: "https://randomuser.me/api/portraits/men/23.jpg", rating: 4.7, text: "Schnelle Erfolge, coole Badges – so macht Lernen Laune." },
-              { name: "Mia F., 18", img: "https://randomuser.me/api/portraits/women/33.jpg", rating: 4.9, text: "Ich hab endlich Spaß am Lernen. Die Memes sind Gold wert!" },
-              { name: "Lukas B., 17", img: "https://randomuser.me/api/portraits/men/41.jpg", rating: 4.8, text: "Quiz, Memes, XP – das motiviert mich richtig!" },
-              { name: "Emily S., 15", img: "https://randomuser.me/api/portraits/women/55.jpg", rating: 4.9, text: "Meine Noten sind besser und ich lache mehr beim Lernen!" },
-            ]).map((user, i) => (
-              <div key={i} className="inline-block w-72 bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mx-2 transition-transform hover:scale-105 align-top">
-                <img src={user.img} alt={user.name} className="w-16 h-16 rounded-full mb-2 mx-auto" />
-                <div className="font-bold text-center whitespace-nowrap overflow-hidden text-ellipsis">{user.name}</div>
-                <div className="text-yellow-400 text-center">{"★ ".repeat(Math.round(user.rating))}<span className="text-gray-700 dark:text-gray-200 text-sm ml-1">{user.rating.toFixed(1)}</span></div>
-                <div className="text-gray-600 dark:text-gray-300 text-center mt-2 text-sm whitespace-normal break-words">„{user.text}“</div>
-              </div>
-            ))}
-          </div>
+      {/* Testimonials */}
+      <section className="max-w-4xl mx-auto w-full flex flex-col md:flex-row items-center gap-8 py-8 animate-fade-in-up">
+        <div className="flex-1 flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" className="w-16 h-16 rounded-full mb-2" />
+          <div className="font-bold">Max S., 17</div>
+          <div className="text-yellow-400">★ 5.0</div>
+          <div className="text-gray-600 dark:text-gray-300 text-center mt-2">„Hab Mathe endlich gecheckt! Von 4 auf 1, dank Memes und Quiz. Beste Plattform!“</div>
+        </div>
+        <div className="flex-1 flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" className="w-16 h-16 rounded-full mb-2" />
+          <div className="font-bold">Lea P., 16</div>
+          <div className="text-yellow-400">★ 4.8</div>
+          <div className="text-gray-600 dark:text-gray-300 text-center mt-2">„Endlich Spaß beim Lernen! Die Memes sind genial und die Erklärungen easy.“</div>
+        </div>
+        <div className="flex-1 flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User" className="w-16 h-16 rounded-full mb-2" />
+          <div className="font-bold">Jonas R., 18</div>
+          <div className="text-yellow-400">★ 4.7</div>
+          <div className="text-gray-600 dark:text-gray-300 text-center mt-2">„Mit Gamification und Quiz macht Mathe sogar Spaß. Meine Noten sind gestiegen!“</div>
         </div>
       </section>
       {/* Features */}
@@ -137,11 +121,6 @@ export default function Home() {
       <section className="max-w-2xl mx-auto w-full py-8 animate-fade-in-up">
         <GamificationBar />
       </section>
-      {/* Footer Disclaimer */}
-      <footer className="w-full bg-white/90 dark:bg-gray-900/90 border-t border-gray-200 dark:border-gray-800 py-6 mt-8 flex flex-col items-center gap-4 animate-fade-in-up text-xs text-gray-500 dark:text-gray-400">
-        <div>© {new Date().getFullYear()} StudyBuddy. Made with ❤️</div>
-        <div>Alle Testimonials und dargestellten Personen sind fiktiv. Ähnlichkeiten mit realen Personen sind rein zufällig.</div>
-      </footer>
     </div>
   );
 }
