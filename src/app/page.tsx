@@ -88,7 +88,7 @@ export default function Home() {
         <div className="flex-1 flex flex-col items-center bg-blue-100 dark:bg-blue-900 rounded-lg shadow p-6">
           <span className="text-4xl">🧠</span>
           <div className="font-bold mt-2">Memes zum Lernen</div>
-          <div className="text-gray-600 dark:text-gray-300 text-center">Mathe erklärt mit Humor – so bleibt's hängen!</div>
+          <div className="text-gray-600 dark:text-gray-300 text-center">Mathe erklärt mit Humor – so bleibt&#39;s hängen!</div>
         </div>
         <div className="flex-1 flex flex-col items-center bg-pink-100 dark:bg-pink-900 rounded-lg shadow p-6">
           <span className="text-4xl">🏆</span>
