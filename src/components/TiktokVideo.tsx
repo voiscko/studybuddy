@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function TiktokVideo() {
   return (
     <div className="relative w-48 h-80 rounded-2xl overflow-hidden shadow-xl bg-black flex items-center justify-center">

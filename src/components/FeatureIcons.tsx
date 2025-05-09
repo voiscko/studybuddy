@@ -21,7 +21,7 @@ const features = [
 export default function FeatureIcons() {
   return (
     <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-      {features.map((f, i) => (
+      {features.map((f) => (
         <div
           key={f.title}
           className="flex flex-col items-center p-4 rounded-xl bg-white/80 dark:bg-gray-900/80 shadow-lg transition-transform hover:scale-105 animate-fade-in"

@@ -1,12 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
-import MemeCarousel from "../components/MemeCarousel";
-import FeatureIcons from "../components/FeatureIcons";
-import TiktokVideo from "../components/TiktokVideo";
-import QuizExample from "../components/QuizExample";
 import GamificationBar from "../components/GamificationBar";
 import ExternalMemeCarousel from "../components/ExternalMemeCarousel";
 
