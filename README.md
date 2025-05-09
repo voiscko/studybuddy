@@ -122,7 +122,7 @@ Bitte beachte unseren [Code of Conduct](CODE_OF_CONDUCT.md) und die [Contributin
 
 ## 📄 Lizenz
 
-MIT © [Dein Name]
+MIT © voiscko
 
 ---
 
